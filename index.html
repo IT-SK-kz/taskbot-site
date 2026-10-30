@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бот поручений</title>
+<meta name="description" content="Telegram-бот для учёта поручений рабочей группы: находит поручения в переписке, подтверждает их у постановщика и напоминает о сроках.">
+<style>
+:root { --bg: #ffffff; --text: #1d1f23; --muted: #5b6270; --line: #e3e6eb; --accent: #2a6fdb; }
+@media (prefers-color-scheme: dark) { :root { --bg: #15171b; --text: #e8eaee; --muted: #a3a9b5; --line: #2c3038; --accent: #7aa7ff; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { font-size: 30px; line-height: 1.25; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+p, li { color: var(--text); }
+.lead { color: var(--muted); margin: 0 0 24px; }
+ul { padding-left: 22px; }
+a { color: var(--accent); }
+footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Бот поручений</h1>
+<p class="lead">Telegram-бот для учёта поручений рабочей группы.</p>
+
+<h2>Что делает бот</h2>
+<ul>
+<li>Находит поручения в сообщениях и голосовых рабочей группы Telegram — только у участников, давших согласие.</li>
+<li>Показывает найденное поручение постановщику в личной переписке; задача создаётся только после его подтверждения.</li>
+<li>Ведёт ход задачи: принята, в работе, на проверке, выполнена; напоминает о сроках и присылает сводки.</li>
+<li>Кладёт отчёты и таблицу задач в Google Диск владельца проекта.</li>
+</ul>
+
+<h2>Как бот работает с данными</h2>
+<p>В группу бот ничего не пишет: всё общение — в личной переписке. Каждый видит только свои задачи, постановщик — поставленные им, руководитель — задачи своих групп. Подробно — в <a href="privacy.html">политике конфиденциальности</a>.</p>
+
+<h2>Контакты</h2>
+<p>Вопросы о боте и данных — <a href="mailto:saqtechnology.kz@gmail.com">saqtechnology.kz@gmail.com</a>.</p>
+
+<footer><a href="privacy.html">Политика конфиденциальности</a> · Редакция от 30.10.2026</footer>
+</main>
+</body>
+</html>
